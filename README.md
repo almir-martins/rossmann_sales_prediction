@@ -1,5 +1,6 @@
 # Rossmann Sales Prediction
 
+[Rossmann Store](img/Rossmann.jpg)
 Sales forecast for the stores of the european drugstore chain Rossmann.
 
 ## 1 - Business problem
