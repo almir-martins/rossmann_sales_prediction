@@ -1,7 +1,7 @@
 # Rossmann Sales Prediction
 
 [Rossmann Store](../img/Rossmann.jpg)
-![Rossmann Store](https://github.com/[almir-martins]/[rossmann_sales_prediction]/blob/[main]/Rossmann.jpg?raw=true)
+![Rossmann Store](https://github.com/almir-martins/rossmann_sales_prediction/blob/main/Rossmann.jpg?raw=true)
 Sales forecast for the stores of the european drugstore chain Rossmann.
 
 ## 1 - Business problem
