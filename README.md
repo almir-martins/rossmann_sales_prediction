@@ -1,18 +1,18 @@
-# Previsão de vendas para rede de drogarias Rossmann
+# Previsão de vendas para rede a européia Rossmann Drugstore
 
 ![Rossmann Store](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/rossmann_markt.jpg)
 
 # 1 - Sobre a Rossmann Drugstore
 
-## 1.1 - Contexto do Negócio
+## 1.1. Contexto do Negócio
 
 A Rossmann é uma das maiores redes de drogarias da Europa com cerca de 56.200 funcionários e mais de 4.000 lojas. Em 2019 a Rossmann teve um faturamento de mais de € 10 bilhões na Alemanha, Polônia, Hungria, República Tcheca, Turquia, Albânia, Kosovo e Espanha. A companhia está em grande expansão e num ritmo elevado, com investimentos para serem utilizados nas mais diversas áreas. Dessa forma é muito importante que a gestão da empresa consiga fazer uma previsão de vendas para um determinado intervalo de tempo no futuro.
 
-## 1.2 - Problema do Negócio
+## 1.2. Problema do Negócio
 
 A rede Rossmann pretende renovar a fachada das lojas alterando sua identidade visual com intuito de melhorar sua imagem e vincular a marca à suas novas metas e valores. O setor financeiro da rede solcitou aos gerentes de cada loja que façam uma previsão das vendas diárias para seis semanas no futuro, para calcular o impacto financeiro da medida. As vendas de cada loja são influenciadas por muitos fatores, entre eles: promoções, concorrência, feriados, sazonalidade e localização. Com milhares de gerentes fazendo suas predições baseado nas circunstâncais de sua loja a acurácia dos resultados pode ser bastante variada e assim a tarefa se torna um grande desafio para a rede.
 
-## 1.3 - Sobre os dados
+## 1.3. Sobre os dados
 
 Para solucionar o problema acima a empresa disponibilizou o histórico de vendas de 1.115 lojas no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). O histórico consiste em um Dataset com os dados de vendas destas lojas de 2015 até 2017, lembrando que algumas lojas do dataset estão fechadas temprariamente para reforma. O dataset apresenta as seguintes features:
 
@@ -34,11 +34,10 @@ Para solucionar o problema acima a empresa disponibilizou o histórico de vendas
 | Promo2Since | Indica mês e ano que a loja iniciou a Promo2 |
 | PromoInterval | Indica os intervalos consecutivos em que a Promo2 é iniciada |
 
-## 3 - Business Assumptions
+# 2 - Planejamento da solução
 
-- All stores contain a basic sortment, but some of them contain (different kinds of) extra sortments.
-- The store's opening on weekends and holidays vary from place to place.
-- The stores participate in seasonal promotions. In some of these cases, the promotion is continued for a longer time.
+Para desenvolvimento da solução utilizei um processo de modelagem cíclico chamado [CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/). Este processo baseia-se em uma separação lógica e clara dos passos para desenvolvimento da solução e em sua estrutura cíclica, de forma que um ciclo consiste percorrer todas as fases do desenvolvimento e a entrega ágil de uma solução (Minimum Viable Product). Sua natureza cíclica permite não só o refatoramento do código como também a formulação de outras hipóteses, criação de novas features, melhora dos modelos, fine tuning, etc.
+![CRISP-DM](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP.jpg)
 
 ## 4 - Solution Strategy
 
