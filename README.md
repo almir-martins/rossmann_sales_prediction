@@ -1,7 +1,7 @@
 # Previsão de vendas para rede de drogarias Rossmann
 
 ![Rossmann Store](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/rossmann_markt.jpg)
-Sales forecast for the stores of the european drugstore chain Rossmann.
+Este repositório contém código para a previsão de vendas da rede de drogarias Rossmann. Os dados usados estão disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). Todas as informações adicionais foram criadas para dar contexto ao problema.
 
 ## 1 - Business problem
 
