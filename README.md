@@ -54,60 +54,92 @@ Como produto entregável minha decisão foi por disponibilizar o modelo desenvol
 
 ## 2.2. Desenvolvimento da Solução
 
-A sequência de tarefas realizadas no desenvolvimento da solução seguem documentados abaixo:
+A sequência de tarefas realizadas no desenvolvimento da solução, seguindo a metodologia CRISP-DM, segue documentada abaixo:
 
-**Passo 01. Data Description:** I searched for NAs, checked data types (and adapted some of them for analysis) and presented a statistical description.
+***Passo 01 - Descrição dos dados:*** Nessa etapa, o objetivo foi conhecer os dados, seus tipos, usar métricas estatísticas para identificar outliers no escopo do negócio e também analisar métricas estatísticas básicas como: média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Nessa etapa também foram feitos alguns ajustes em features do dataset, como preenchimento de NA's por exemplo.
 
-**Passo 02. Feature Engineering:** New features were created to make possible a more thorough analysis.
+***Passo 02 - Feature Engineering:*** Nessa etapa, foi desenvolvido um mapa mental para analisar o fenômeno, suas variáveis e os principais aspectos que impactam cada variável. A partir das características do hipóteses e da necessidade de novos atributos, foram elevados novos recursos a partir das variáveis originais, a fim de melhorar o fenômeno do ser modelado.
 
-***Step 03 - Data Filtering:*** Entries containing no information or containing information which does not match the scope of the project were filtered out.
+***Passo 03 - Filtragem dos dados:*** O objetivo desta etapa foi filtrar linhas e excluir colunas que não são relevantes para o modelo ou não fazem parte do escopo do negócio, como por exemplo, desconsiderar dias que as lojas não estavam operando e/ou que não houveram vendas.
 
-***Step 04 - Exploratory Data Analysis:*** I performed univariate, bivariate and multivariate data analysis, obtaining statistical properties of each of them, correlations and testing hypothesis (the most important of them are detailed in the following section).
+***Passo 04 - Análise Exploratória dos dados:*** O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foram feitas analises univariadas, biváriadas e multivariadas, utilizandos os dados numéricos e categóricos do conjunto.
 
-Step 05. Data Preparation: Numerical data was rescaled, categorical data was transformed and cyclic data (such as months, weeks and days) was transformed using mathematical trigonometrical functions.
+***Passo 05 - Preparação dos dados:*** Nessa etapa, os dados foram preparados para o inicio das aplicações de modelos de machine learning. Foram utilizadas técnicas como Rescaling e Transformation, através de encodings e nature transformation.
 
-Step 06. Feature selection: The statistically most relevant features were selected using the Boruta package.
+***Passo 06 - Seleção de Features:*** O objetivo desta etapa foi selecionar os melhores atributos para treinar o modelo. Foi utilizado o algoritmo Boruta para fazer a seleção das variáveis, destacando as que tinham mais relevância para o fenômeno.
 
-Step 07. Machine learning modelling: Some machine learning models were trained. The one that presented best results after cross-validation went through a further stage of hyperparameter fine tunning to optimize the model's generalizability.
+***Passo 07 - Modelagem de Machine Learning:*** Nessa etapa foram feitos os testes e treinamento de alguns modelos de machine learning, onde foi possível comparar suas respectivas performance e feita a escolha do modelo ideal para o projeto. Inclusive foi utilizada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.
 
-Step 08. Model-to-business: The models performance is converted into business values.
+***Passo 08 - Hyperparameter Fine Tunning:*** Tendo a escolha do algorotimo XBoost na etapa anterior, foi feita uma analise através do método Randon Search para escolher os melhores valores para cada um dos parâmetros do modelo. Ao final dessa etapa foi possível obter os valores finais da performance do modelo.
 
-Step 09. Deploy Model to Production: The model is deployed on a cloud environment to make possible that other stakeholders and services access its results.
-5 Top 3 Data insights
+***Passo 09 - Tradução e interpretação de erros:*** O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, onde foi possível avaliar a performance do modelo com o viés de negócio, demonstrando o resultado financeiro que pode ser esperado se aplicado o modelo desenvolvido.
 
-    Stores with larger assortment do not sell more.
-    Stores with closer competitors do sell more.
-    Stores sell less at school holidays (except during summer).
+***Passo 10 - Deploy do modelo em produção:*** Após execução bem sucedida do modelo, o objetivo foi publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
 
-## 6 - Machine Learning Model Applied
+***Passo 11 - Bot do Telegram:*** A etapa final do projeto foi criar um bot no app de mensagens - Telegram, que possibilita consultar as previsões a qualquer momento e lugar, visto que também foi feito o deploy na plataforma em nuvem.
 
-The following machine learning models were trained:
+# 3 - Principais insights:
 
-- Linear Regression;
-- Regularized Linear Regression;
-- Random Forest Regressor;
-- XGBoost Regressor.
+Hipótese 1: Lojas com sortimento maior devem vender mais. Falsa: Lojas com uma variedade maior vendem MENOS.
 
-All of them were cross-validated and their performance was compared against a random model.
+Hipótese 2: As lojas devem vender mais ao longo dos anos. Falsa: As lojas vendem menos ao longo dos anos.
 
-## 7  - Machine Learning Model Performance
+Hipótese 3: Lojas devem vender mais no segundo semestre. Falsa: Lojas vendem menos no segundo semestre do ano.
 
-The performance of every trained model, after cross-validation. The columns correspond to the metrics: Mean Absolute Error, Mean Absolute Percentage Error and Root Mean Squared Error.
+**(Demais insights podem ser consultados nos notebooks do projeto)**
 
-picture alt
+# 4 - Performance dos Modelos de Machine Learning:
 
-## 8 - Conclusions
+O dados do projeto foram testados com modelos lineares e não lineares.Foi utilizada a estratégia de selecionar 5 tipos de modelos: Modelo de média, dois modelos lineares, e dois não-lineares. A média por exemplo serviu como base de referência. Os modelos lineares servem para avaliar a complexidade de aprendizado do conjunto de dados. Caso a performance fosse ruim, poderia entender que seria necessário um modelo mais complexo.
 
-The sales forecast and the generated insights provide the CEO with valuable tools to decide the amount of budget that is going to be dedicated to the restoration of each store.
-9 Lessons Learned
+- Modelos Lineares:
 
-- The exploratory data analysis provides important insights to the business problem, many of which contradict the initial hypothesis. This information is valuable for the understanding of business and for planning future actions. This step also provides a preview of the result of the feature selection step.
-- The machine learning model performance must be evaluated in the learning and generalization stages. A balance between bias and variance must be achieved based on the uniqueness of the problem.
+    Média
+    Linear Regression
+    Linear Regression Regularized
 
-## 10 - Next steps and improvements
+- Modelos Não Lineares:
 
-Some hypothesis made when filling missing data would be reviewed in a following CRISP cycle, and other ones would be tested in the exploratory data analysis step. Also, other machine learning models would be employed (in particular, gradient boost models).
+    Random Forest Regressor
+    XGBoost Regressor
 
-Besides, the model is deployed to production in an App at Heroku. One can send a request from an external application (such as Postman, for example). The app receives a JSON file and returns the sales forecast for the following six weeks (the amount is displayed in the Brazilian currency BRL). This app is also receiving requests from another app hooked to a Telegram Bot. In this case, one must only pass the number of the store to the Bot to obtain the sales forecast. This second App is also hosted at Heroku.
+Comparação da performance dos modelos:
+| Model Name | MAE CV | MAPE CV | RMSE CV |
+| ------ | ----- | ---- | ---- |
+| Random Forest Regressor | 842.56 +/- 220.07 | 0.12 +/- 0.02 | 1264.33 +/- 323.29 |
+| XGBoost Regressor | 1048.45 +/- 172.04 | 0.14 +/- 0.02 | 1513.27 +/- 234.33 |
+| Average Model | 1354.80 | 0.45 | 1835.13 |
+| Linear Regression | 2081.73 +/- 295.63 | 0.3 +/- 0.02 | 2952.52 +/- 468.37 |
+| Lasso | 2116.38 +/- 341.5 | 0.29 +/- 0.01 | 3057.75 +/- 504.26 |
+
+Performance final do modelo escolhido após Hyperparameter Fine Tuning:
+| Model Name | MAE | MAPE | RMSE |
+ ------ | ----- | ---- | ---- |
+| XGBoost Regressor | 673.394631 | 0.097298 | 965.731681 | 
+
+# 5 - Resultado final - Model performance vs Business Values
+
+O resultado final do projeto foi satisfatório para a maior parte das lojas abrangidas nos dados, conforme gráfico abaixo (Essas lojas em específico podem conter particularidades e possivelmente num segundo ciclo desse projeto, algo poderia ser feito para melhor a performance e predição para elas).
+<imagem>
+A maior parte das lojas tiveram o erro MAPE muito próximo do erro performado no modelo - MAPE Error de 9%
+
+Como indicado no resumo prévio do projeto, o resultado que pode ser obtido utilizando-se do modelo, considerando o melhor e pior cenário, é o seguinte:
+| Scenarios | Values |
+| ---- | ---- |
+| predictions | US$ 282,662,848.00 |
+| worst scenario | US$ 281,907,880.11 |
+| best scenario | US$ 283,417,771.65 |
+
+Podemos observar o performance do modelo, avaliando a relação entre as vendas (dados de teste) e as predições:
+<imagem>
+
+# 6 - Conclusão
+
+O projeto desenvolvido foi concluído com êxito, onde foi possível projetar as vendas das próximas semanas para que o CFO tenha informações reais para criar o budget das lojas, podendo consultar em tempo real cada predição.
+
+    O deploy do modelo desenvolvido e da aplicação do Bot do Telegram foram construídos no ambiente em nuvem do Heroku e estão em funcionamento.
+
+    Toda documentação do projeto pode ser consultada no repositório, incluindo os notebooks desenvolvidos e todos os scritps finais para as aplicações web.
+
 
 Este repositório contém código para a previsão de vendas da rede de drogarias Rossmann. Os dados usados estão disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). Todas as informações adicionais foram criadas para dar contexto ao problema.
