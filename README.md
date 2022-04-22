@@ -34,7 +34,9 @@ Para solucionar o problema acima a empresa disponibilizou o histórico de vendas
 | Promo2Since | Indica mês e ano que a loja iniciou a Promo2 |
 | PromoInterval | Indica os intervalos consecutivos em que a Promo2 é iniciada |
 
-# 2 - Planejamento da solução
+# 2 - Estratégia da solução
+
+## 2.1. Planejamento da solução
 
 Para desenvolvimento da solução utilizei um processo de modelagem cíclico chamado [CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/). Este processo baseia-se em uma separação lógica e clara dos passos para desenvolvimento da solução e em sua estrutura cíclica, de forma que um ciclo consiste percorrer todas as fases do desenvolvimento e a entrega ágil de uma solução (Minimum Viable Product). Sua natureza cíclica permite não só o refatoramento do código como também a formulação de outras hipóteses, criação de novas features, melhora dos modelos, fine tuning, etc.
 
@@ -44,8 +46,11 @@ Para desenvolvimento da solução utilizei um processo de modelagem cíclico cha
 ![Mapa mental - CRISP](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP4.jpg)
 ***Mapa Completo - CRISP***
 ![Mapa Completo - CRISP](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP2.jpg)
+*mapas mentais criados usando a ferramenta* [Mindmeister](https://www.mindmeister.com)
 
-## 4 - Solution Strategy
+Como produto entregável minha decisão foi por disponibilizar o modelo desenvolvido em uma API e criar um Bot no aplicativo Telegram para consumir o serviço da API, tornando assim a consulta dinâmica e mobile friendly.
+
+## 2.2. Desenvolvimento da Solução
 
 The strategy adopted was the following:
 
