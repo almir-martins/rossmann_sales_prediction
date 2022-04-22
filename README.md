@@ -42,11 +42,13 @@ Para desenvolvimento da solução utilizei um processo de modelagem cíclico cha
 
 ***Rascunho - CRISP***
 ![Rascunho - CRISP](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP.jpg)
+
 ***Mapa mental - CRISP***
 ![Mapa mental - CRISP](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP4.jpg)
+
 ***Mapa Completo - CRISP***
 ![Mapa Completo - CRISP](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP2.jpg)
-*mapas mentais criados usando a ferramenta* [Mindmeister](https://www.mindmeister.com)
+*(mapas mentais criados usando a ferramenta* [Mindmeister])(https://www.mindmeister.com)
 
 Como produto entregável minha decisão foi por disponibilizar o modelo desenvolvido em uma API e criar um Bot no aplicativo Telegram para consumir o serviço da API, tornando assim a consulta dinâmica e mobile friendly.
 
