@@ -2,15 +2,37 @@
 
 ![Rossmann Store](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/rossmann_markt.jpg)
 
-Rossmann é uma das maiores redes de drogarias da Europa com cerca de 56.200 funcionários e mais de 4.000 lojas. Em 2019 a Rossmann teve um faturamento de mais de € 10 bilhões na Alemanha, Polônia, Hungria, República Tcheca, Turquia, Albânia, Kosovo e Espanha. A companhia está em grande expansão e num ritmo elevado, com investimentos para serem utilizados nas mais diversas áreas. Dessa forma é muito importante que a gestão da empresa consiga fazer uma previsão de vendas para um determinado intervalo de tempo no futuro.
+# 1 - Sobre a Rossmann Drugstore
 
-## 1 - Problema de Negócio
+## 1.1 - Contexto do Negócio
+
+A Rossmann é uma das maiores redes de drogarias da Europa com cerca de 56.200 funcionários e mais de 4.000 lojas. Em 2019 a Rossmann teve um faturamento de mais de € 10 bilhões na Alemanha, Polônia, Hungria, República Tcheca, Turquia, Albânia, Kosovo e Espanha. A companhia está em grande expansão e num ritmo elevado, com investimentos para serem utilizados nas mais diversas áreas. Dessa forma é muito importante que a gestão da empresa consiga fazer uma previsão de vendas para um determinado intervalo de tempo no futuro.
+
+## 1.2 - Problema do Negócio
 
 A rede Rossmann pretende renovar a fachada das lojas alterando sua identidade visual com intuito de melhorar sua imagem e vincular a marca à suas novas metas e valores. O setor financeiro da rede solcitou aos gerentes de cada loja que façam uma previsão das vendas diárias para seis semanas no futuro, para calcular o impacto financeiro da medida. As vendas de cada loja são influenciadas por muitos fatores, entre eles: promoções, concorrência, feriados, sazonalidade e localização. Com milhares de gerentes fazendo suas predições baseado nas circunstâncais de sua loja a acurácia dos resultados pode ser bastante variada e assim a tarefa se torna um grande desafio para a rede.
 
-## 2 - Business results
+## 1.3 - Sobre os dados
 
-The gross expected income of the majority of stores is in the range between R$5000.00 and R$22000.00. The chain is expected to obtain R$289,822,112.00, with best and worst case scenarios of R$290,808,412.17 and R$288,835,860.27, respectively. These scenarios are predicted using the mean absolute percentage error. The same statistical error is applied to each store, individually.
+Para solucionar o problema acima a empresa disponibilizou o histórico de vendas de 1.115 lojas no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). O histórico consiste em um Dataset com os dados de vendas destas lojas de 2015 até 2017, lembrando que algumas lojas do dataset estão fechadas temprariamente para reforma. O dataset apresenta as seguintes features:
+
+| Atributos | Descrição |
+| ------ | ------- |
+| Id | Identificador da transação |
+| Store | Identificador único para cada loja |
+| Sales | Volume de vendas no dia (Variável target) |
+| Customers | Número de clientes no dia |
+| Open | Indica se a loja está aberta ou fechada |
+| StateHoliday | Indica feriado estadual, algumas lojas fecham nos feriados |
+| SchoolHoliday | Indica feriado escolar |
+| StoreType | Tipo da loja |
+| Assortment | Indica o nível de variedade de produtos da loja |
+| CompetitionDistance | Distância em metros do concorrente mais próximo |
+| CompetitionOpenSince | Mês e ano que abriu o concorrente mais próximo |
+| Promo | Indica se está ocorrendo alguma promoção na loja |
+| Promo2 | Indica se o prazo final da promoção foi extendido |
+| Promo2Since | Indica mês e ano que a loja iniciou a Promo2 |
+| PromoInterval | Indica os intervalos consecutivos em que a Promo2 é iniciada |
 
 ## 3 - Business Assumptions
 
