@@ -54,15 +54,15 @@ Como produto entregável minha decisão foi por disponibilizar o modelo desenvol
 
 ## 2.2. Desenvolvimento da Solução
 
-A sequência de tarefas utilizadas no desenvolvimento da solução seguem documentados abaixo:
+A sequência de tarefas realizadas no desenvolvimento da solução seguem documentados abaixo:
 
-**Passo 01.** Data Description: I searched for NAs, checked data types (and adapted some of them for analysis) and presented a statistical description.
+**Passo 01. Data Description:** I searched for NAs, checked data types (and adapted some of them for analysis) and presented a statistical description.
 
-**Passo 02.** Feature Engineering: New features were created to make possible a more thorough analysis.
+**Passo 02. Feature Engineering:** New features were created to make possible a more thorough analysis.
 
-**Step 03 -** Data Filtering: Entries containing no information or containing information which does not match the scope of the project were filtered out.
+***Step 03 - Data Filtering:*** Entries containing no information or containing information which does not match the scope of the project were filtered out.
 
-**Step 04 -** Exploratory Data Analysis: I performed univariate, bivariate and multivariate data analysis, obtaining statistical properties of each of them, correlations and testing hypothesis (the most important of them are detailed in the following section).
+***Step 04 - Exploratory Data Analysis:*** I performed univariate, bivariate and multivariate data analysis, obtaining statistical properties of each of them, correlations and testing hypothesis (the most important of them are detailed in the following section).
 
 Step 05. Data Preparation: Numerical data was rescaled, categorical data was transformed and cyclic data (such as months, weeks and days) was transformed using mathematical trigonometrical functions.
 
