@@ -1,4 +1,4 @@
-# Previsão de vendas para rede a européia Rossmann Drugstore
+# Previsão de vendas para a rede européia Rossmann Drugstore
 
 ![Rossmann Store](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/rossmann_markt.jpg)
 
@@ -38,6 +38,7 @@ Para solucionar o problema acima a empresa disponibilizou o histórico de vendas
 
 Para desenvolvimento da solução utilizei um processo de modelagem cíclico chamado [CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/). Este processo baseia-se em uma separação lógica e clara dos passos para desenvolvimento da solução e em sua estrutura cíclica, de forma que um ciclo consiste percorrer todas as fases do desenvolvimento e a entrega ágil de uma solução (Minimum Viable Product). Sua natureza cíclica permite não só o refatoramento do código como também a formulação de outras hipóteses, criação de novas features, melhora dos modelos, fine tuning, etc.
 ![CRISP-DM](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP.jpg)
+![CRISP-DM](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP2.jpg)
 
 ## 4 - Solution Strategy
 
