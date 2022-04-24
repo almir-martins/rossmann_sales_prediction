@@ -58,26 +58,12 @@ A sequência de tarefas realizadas no desenvolvimento da solução, seguindo a m
 
 ***Passo 01 - Descrição dos dados:***
 
-Renomear as colunas
-Dimensões do dataset
-Conhecer o tipo dos dados
-Preencher valores faltantes com valores que façam sentido para o negócio
-Alterar tipos de dados para minimizar o tamanho do dataset e prepará-lo para tratamento
-Separar os dados em numéricos e descritivos
-Usar estatísca descritiva para mensurar (média, moda, mediana, kurtosis, desvio patrão, skewness, minímos, máximos e range)
-Plotar histogramas e boxplot para verificar a distribuição dos dados
-
-
-Nessa etapa, o objetivo foi conhecer os dados, seus tipos, usar métricas estatísticas para identificar outliers no escopo do negócio e também analisar métricas estatísticas básicas como: média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Nessa etapa também foram feitos alguns ajustes em features do dataset, como preenchimento de NA's por exemplo.
+Esta é a etapa inicial do projeto para conhecer os dados e as dimensões do dataset, verificar o tipos das colunas, usar estatísca descritiva para mensurar a média, moda, mediana, kurtosis, desvio patrão, skewness e range dos dados. Também foram separados os dados por tipo numéricos ou descritivos, alterado os nomes das colunas e feito o planejamento e o preenchimentos dos valores faltantes de forma a fazer sentido para o problema.
 
 ***Passo 02 - Feature Engineering:***
 
-Separar os grupos de features por categorias intuitivamente
-Elaborar hipóteses empíricas para cada categoria
-Eliminar hipóteses que não possam ser provadas com os dados
-Criar/derivar novas features para responder as perguntas e provar/refutar as hipóteses criadas
-
-Nessa etapa, foi desenvolvido um mapa mental para analisar o fenômeno, suas variáveis e os principais aspectos que impactam cada variável. A partir das características do hipóteses e da necessidade de novos atributos, foram elevados novos recursos a partir das variáveis originais, a fim de melhorar o fenômeno do ser modelado.
+Na etapa de Engenharia das Features o foco foi em Separar os grupos de features por categorias intuitivamente (mapa mental) de forma a vizualizar alguns insights e através de brainstorm criar uma lista empírica de hipóteses além de filtrar e eliminar as hipóteses que não possam ser provadas. À partir da lista final de hipóteses criar e derivar novas features para responder às perguntas e provar ou refutar estas hipóteses.
+[Mapa mental](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/DAILY_STORE_SALES.png)
 
 ***Passo 03 - Filtragem dos dados:***
 
