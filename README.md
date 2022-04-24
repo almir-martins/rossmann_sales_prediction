@@ -91,7 +91,8 @@ Lasso
 Random Forest
 XGBoost
 Comparação da performance dos modelos com Cross validation
-Na modelagem foram realizados os treinamentos dos modelos de machine learning selecionados para o problema em questão. A desempenho dos modelos testados foram comparados no modo single performance. Na segunda parte da modelagem foi seleciona entre os métodos de Cross Validation: Random Search, Grid Search e Bayesian Search. A seleção do método de validação cruzada se deu pelo tempo de processamento e pelo fato de o método CRISP ser cíclico, podendo essa escolha ser alterada em uma nova iteração. Os modelos testados foram:
+Na modelagem foram realizados os treinamentos dos modelos de machine learning selecionados para o problema em questão. A desempenho dos modelos testados foram comparados no modo single performance. Na segunda parte da modelagem foi seleciona entre os métodos de Cross Validation: Random Search, Grid Search e Bayesian Search. A seleção do método de validação cruzada se deu pelo tempo de processamento e pelo fato de o método CRISP ser cíclico, podendo essa escolha ser alterada em uma nova iteração.
+Single Performance:
 | Model Name | MAE | MAPE | RMSE |
 |  --- | --- | --- | --- |
 | XGBoost Regressor | 687.46 | 0.10 | 997.97 |
@@ -99,6 +100,14 @@ Na modelagem foram realizados os treinamentos dos modelos de machine learning se
 | Average Model | 1354.80 | 0.46 | 1835.14 |
 | Linear Regression | 1867.09 | 0.29 | 2671.05 |
 | Linear Regression Regularized | 1891.70 | 0.29 | 2744.45 |
+
+Cross Validation Performance
+ Model Name | MAE | MAPE | RMSE |
+|  --- | --- | --- | --- |
+| Random Forest | 837.97 +/- 218.4 | 0.12 +/- 0.02 | 1256.45 +/- 318.73 |
+| XGBoost Regressor | 905.77 +/- 182.34 | 0.13 +/- 0.02 | 1304.21 +/- 266.28 |
+| Linear Regresion | 2081.73 +/- 295.63 | 0.3 +/- 0.02 | 2952.52 +/- 468.37 |
+| Lasso | 2116.38 +/- 341.5 | 0.29 +/- 0.01 | 3057.75 +/- 504.26 |
 
 ***Passo 08 - Hyperparameter Fine Tunning:***
 
