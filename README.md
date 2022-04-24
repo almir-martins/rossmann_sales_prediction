@@ -64,42 +64,24 @@ Esta é a etapa inicial do projeto para conhecer os dados e as dimensões do dat
 
 Na etapa de Engenharia das Features o foco foi em Separar os grupos de features por categorias intuitivamente (mapa mental) de forma a vizualizar alguns insights e através de brainstorm criar uma lista empírica de hipóteses além de filtrar e eliminar as hipóteses que não possam ser provadas. À partir da lista final de hipóteses criar e derivar novas features para responder às perguntas e provar ou refutar estas hipóteses.
 ![Mapa mental](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/DAILY_STORE_SALES.png)
+(mapas mentais criados usando a ferramenta [Coggle](https://coggle.it/))
 
 ***Passo 03 - Filtragem dos dados:***
-
-Deletar linhas redundantes (lojas fechadas, vendas zeradas)
-Deletar colunas supérfluas, redundantes ou com dados insuficientes (Loja aberta ou fechada, clientes faltantes, mapa do mês, intervalo de promoção)
 
 O objetivo desta etapa foi filtrar linhas e excluir colunas que não são relevantes para o modelo ou não fazem parte do escopo do negócio, como por exemplo, desconsiderar dias que as lojas não estavam operando e/ou que não houveram vendas.
 
 ***Passo 04 - Análise Exploratória dos dados:***
 
-Análise das features numéricas e categóricas
-Análise variada (plots, distribuição, outlier, range, matriz de confusão)
-Análise bivariada
-Análise multivariada
-Validação ou refutação das hipóteses criadas anteriormente
-Encontrar insights
-Testar correlações
-Ordenar as features por relevância
-
-O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foram feitas analises univariadas, biváriadas e multivariadas, utilizandos os dados numéricos e categóricos do conjunto.
+O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foi realizado análise das variáveis isoladamente (Análise variada), de cada variável em relação a variável reposta (Análise bivariada) e das variáveis em cojunto (Análise multivariada). Para tal foram usados histogramas para verificar a distribuição das variáveis, boxplot para análise de range e outliers, matriz de confusão para medir correlação, método de Kramer's V, entre outros. Também nessa fase foram provadas ou refutadas as hipóteses da etapa anterior além de ordenar as features por nível relevância para o modelo.
+![Plots das variáveis](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/plots.png)
 
 ***Passo 05 - Preparação dos dados:***
 
-Normalização (rescaling)
-Transformação (encoding 3 tipos)
-
-Nessa etapa, os dados foram preparados para o inicio das aplicações de modelos de machine learning. Foram utilizadas técnicas como Rescaling e Transformation, através de encodings e nature transformation.
+Nessa etapa os dados foram preparados para o inicio das aplicações de modelos de machine learning. Foi utilizada técnicas como Rescaling usando MinMaxScaler e RobustScaler conforme a característica das features e seus respectivos outliers, foi utilizado Encoding das variáveis categóricas usando One Hot Encoding, Ordinal Encoding, Laber Encoding e transformação de natureza usando Seno e Coseno. Por último a transformação da variável resposta usando o método logarítmo.
 
 ***Passo 06 - Seleção de Features:***
 
-Dividir em treino e teste
-Séries temporais (divisão por datas)
-Feature selection com boruta
-Feature selection manual
-
-O objetivo desta etapa foi selecionar os melhores atributos para treinar o modelo. Foi utilizado o algoritmo Boruta para fazer a seleção das variáveis, destacando as que tinham mais relevância para o fenômeno.
+Nesta etapa o objetivo foi selecionar os melhores atributos para treinar o modelo. Foi utilizado o algoritmo Boruta para fazer a seleção das variáveis, destacando as que tinham mais relevância para o fenômeno. Também foi incluído manualmente algumas features criadas no passo de Feature Enginnering que o Boruta não selecionou.
 
 ***Passo 07 - Modelagem de Machine Learning:***
 
