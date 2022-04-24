@@ -56,27 +56,87 @@ Como produto entregável minha decisão foi por disponibilizar o modelo desenvol
 
 A sequência de tarefas realizadas no desenvolvimento da solução, seguindo a metodologia CRISP-DM, segue documentada abaixo:
 
-***Passo 01 - Descrição dos dados:*** Nessa etapa, o objetivo foi conhecer os dados, seus tipos, usar métricas estatísticas para identificar outliers no escopo do negócio e também analisar métricas estatísticas básicas como: média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Nessa etapa também foram feitos alguns ajustes em features do dataset, como preenchimento de NA's por exemplo.
+***Passo 01 - Descrição dos dados:*** 
+Renomear as colunas
+Dimensões do dataset
+Conhecer o tipo dos dados
+Preencher valores faltantes com valores que façam sentido para o negócio
+Alterar tipos de dados para minimizar o tamanho do dataset e prepará-lo para tratamento
+Separar os dados em numéricos e descritivos
+Usar estatísca descritiva para mensurar (média, moda, mediana, kurtosis, desvio patrão, skewness, minímos, máximos e range)
+Plotar histogramas e boxplot para verificar a distribuição dos dados
 
-***Passo 02 - Feature Engineering:*** Nessa etapa, foi desenvolvido um mapa mental para analisar o fenômeno, suas variáveis e os principais aspectos que impactam cada variável. A partir das características do hipóteses e da necessidade de novos atributos, foram elevados novos recursos a partir das variáveis originais, a fim de melhorar o fenômeno do ser modelado.
 
-***Passo 03 - Filtragem dos dados:*** O objetivo desta etapa foi filtrar linhas e excluir colunas que não são relevantes para o modelo ou não fazem parte do escopo do negócio, como por exemplo, desconsiderar dias que as lojas não estavam operando e/ou que não houveram vendas.
+Nessa etapa, o objetivo foi conhecer os dados, seus tipos, usar métricas estatísticas para identificar outliers no escopo do negócio e também analisar métricas estatísticas básicas como: média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Nessa etapa também foram feitos alguns ajustes em features do dataset, como preenchimento de NA's por exemplo.
 
-***Passo 04 - Análise Exploratória dos dados:*** O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foram feitas analises univariadas, biváriadas e multivariadas, utilizandos os dados numéricos e categóricos do conjunto.
+***Passo 02 - Feature Engineering:*** 
+Separar os grupos de features por categorias intuitivamente
+Elaborar hipóteses empíricas para cada categoria
+Eliminar hipóteses que não possam ser provadas com os dados
+Criar/derivar novas features para responder as perguntas e provar/refutar as hipóteses criadas
 
-***Passo 05 - Preparação dos dados:*** Nessa etapa, os dados foram preparados para o inicio das aplicações de modelos de machine learning. Foram utilizadas técnicas como Rescaling e Transformation, através de encodings e nature transformation.
+Nessa etapa, foi desenvolvido um mapa mental para analisar o fenômeno, suas variáveis e os principais aspectos que impactam cada variável. A partir das características do hipóteses e da necessidade de novos atributos, foram elevados novos recursos a partir das variáveis originais, a fim de melhorar o fenômeno do ser modelado.
 
-***Passo 06 - Seleção de Features:*** O objetivo desta etapa foi selecionar os melhores atributos para treinar o modelo. Foi utilizado o algoritmo Boruta para fazer a seleção das variáveis, destacando as que tinham mais relevância para o fenômeno.
+***Passo 03 - Filtragem dos dados:*** 
+Deletar linhas redundantes (lojas fechadas, vendas zeradas)
+Deletar colunas supérfluas, redundantes ou com dados insuficientes (Loja aberta ou fechada, clientes faltantes, mapa do mês, intervalo de promoção)
 
-***Passo 07 - Modelagem de Machine Learning:*** Nessa etapa foram feitos os testes e treinamento de alguns modelos de machine learning, onde foi possível comparar suas respectivas performance e feita a escolha do modelo ideal para o projeto. Inclusive foi utilizada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.
+O objetivo desta etapa foi filtrar linhas e excluir colunas que não são relevantes para o modelo ou não fazem parte do escopo do negócio, como por exemplo, desconsiderar dias que as lojas não estavam operando e/ou que não houveram vendas.
 
-***Passo 08 - Hyperparameter Fine Tunning:*** Tendo a escolha do algorotimo XBoost na etapa anterior, foi feita uma analise através do método Randon Search para escolher os melhores valores para cada um dos parâmetros do modelo. Ao final dessa etapa foi possível obter os valores finais da performance do modelo.
+***Passo 04 - Análise Exploratória dos dados:*** 
+Análise das features numéricas e categóricas
+Análise variada (plots, distribuição, outlier, range, matriz de confusão)
+Análise bivariada
+Análise multivariada
+Validação ou refutação das hipóteses criadas anteriormente
+Encontrar insights
+Testar correlações
+Ordenar as features por relevância
+
+O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foram feitas analises univariadas, biváriadas e multivariadas, utilizandos os dados numéricos e categóricos do conjunto.
+
+***Passo 05 - Preparação dos dados:*** 
+Normalização (rescaling)
+Transformação (encoding 3 tipos)
+
+Nessa etapa, os dados foram preparados para o inicio das aplicações de modelos de machine learning. Foram utilizadas técnicas como Rescaling e Transformation, através de encodings e nature transformation.
+
+***Passo 06 - Seleção de Features:*** 
+Dividir em treino e teste
+Séries temporais (divisão por datas)
+Feature selection com boruta
+Feature selection manual
+
+O objetivo desta etapa foi selecionar os melhores atributos para treinar o modelo. Foi utilizado o algoritmo Boruta para fazer a seleção das variáveis, destacando as que tinham mais relevância para o fenômeno.
+
+***Passo 07 - Modelagem de Machine Learning:*** 
+Average model
+Linear regression
+Lasso
+Random Forest
+XGBoost
+Comparação da performance dos modelos com Cross validation
+
+Nessa etapa foram feitos os testes e treinamento de alguns modelos de machine learning, onde foi possível comparar suas respectivas performance e feita a escolha do modelo ideal para o projeto. Inclusive foi utilizada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.
+
+***Passo 08 - Hyperparameter Fine Tunning:*** 
+Seleção do método de Fine Tuning
+Random, Grid, Bayesian
+Escolha do Random Search
+
+Tendo a escolha do algorotimo XBoost na etapa anterior, foi feita uma analise através do método Randon Search para escolher os melhores valores para cada um dos parâmetros do modelo. Ao final dessa etapa foi possível obter os valores finais da performance do modelo.
 
 ***Passo 09 - Tradução e interpretação de erros:*** O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, onde foi possível avaliar a performance do modelo com o viés de negócio, demonstrando o resultado financeiro que pode ser esperado se aplicado o modelo desenvolvido.
 
-***Passo 10 - Deploy do modelo em produção:*** Após execução bem sucedida do modelo, o objetivo foi publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
+***Passo 10 - Deploy do modelo em produção:*** 
+*Em desenvolvimento*
 
-***Passo 11 - Bot do Telegram:*** A etapa final do projeto foi criar um bot no app de mensagens - Telegram, que possibilita consultar as previsões a qualquer momento e lugar, visto que também foi feito o deploy na plataforma em nuvem.
+Após execução bem sucedida do modelo, o objetivo foi publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
+
+***Passo 11 - Bot do Telegram:*** 
+*Em desenvolvimento*
+
+A etapa final do projeto foi criar um bot no app de mensagens - Telegram, que possibilita consultar as previsões a qualquer momento e lugar, visto que também foi feito o deploy na plataforma em nuvem.
 
 # 3 - Principais insights:
 
@@ -140,6 +200,5 @@ O projeto desenvolvido foi concluído com êxito, onde foi possível projetar as
     O deploy do modelo desenvolvido e da aplicação do Bot do Telegram foram construídos no ambiente em nuvem do Heroku e estão em funcionamento.
 
     Toda documentação do projeto pode ser consultada no repositório, incluindo os notebooks desenvolvidos e todos os scritps finais para as aplicações web.
-
 
 Este repositório contém código para a previsão de vendas da rede de drogarias Rossmann. Os dados usados estão disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). Todas as informações adicionais foram criadas para dar contexto ao problema.
