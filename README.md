@@ -92,6 +92,7 @@ Random Forest
 XGBoost
 Comparação da performance dos modelos com Cross validation
 Na modelagem foram realizados os treinamentos dos modelos de machine learning selecionados para o problema em questão. A desempenho dos modelos testados foram comparados no modo single performance. Na segunda parte da modelagem foi seleciona entre os métodos de Cross Validation: Random Search, Grid Search e Bayesian Search. A seleção do método de validação cruzada se deu pelo tempo de processamento e pelo fato de o método CRISP ser cíclico, podendo essa escolha ser alterada em uma nova iteração.
+
 Single Performance:
 | Model Name | MAE | MAPE | RMSE |
 |  --- | --- | --- | --- |
