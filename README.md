@@ -91,8 +91,14 @@ Lasso
 Random Forest
 XGBoost
 Comparação da performance dos modelos com Cross validation
-
-Nessa etapa foram feitos os testes e treinamento de alguns modelos de machine learning, onde foi possível comparar suas respectivas performance e feita a escolha do modelo ideal para o projeto. Inclusive foi utilizada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.
+Na modelagem foram realizados os treinamentos dos modelos de machine learning selecionados para o problema em questão. A desempenho dos modelos testados foram comparados no modo single performance. Na segunda parte da modelagem foi seleciona entre os métodos de Cross Validation: Random Search, Grid Search e Bayesian Search. A seleção do método de validação cruzada se deu pelo tempo de processamento e pelo fato de o método CRISP ser cíclico, podendo essa escolha ser alterada em uma nova iteração. Os modelos testados foram:
+| Model Name | MAE | MAPE | RMSE |
+|  --- | --- | --- | --- |
+| XGBoost Regressor | 687.46 | 0.10 | 997.97 |
+| Random Forest | 679.69 | 0.10 | 1010.61 |
+| Average Model | 1354.80 | 0.46 | 1835.14 |
+| Linear Regression | 1867.09 | 0.29 | 2671.05 |
+| Linear Regression Regularized | 1891.70 | 0.29 | 2744.45 |
 
 ***Passo 08 - Hyperparameter Fine Tunning:***
 
