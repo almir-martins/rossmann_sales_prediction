@@ -56,7 +56,8 @@ Como produto entregável minha decisão foi por disponibilizar o modelo desenvol
 
 A sequência de tarefas realizadas no desenvolvimento da solução, seguindo a metodologia CRISP-DM, segue documentada abaixo:
 
-***Passo 01 - Descrição dos dados:*** 
+***Passo 01 - Descrição dos dados:***
+
 Renomear as colunas
 Dimensões do dataset
 Conhecer o tipo dos dados
@@ -69,7 +70,8 @@ Plotar histogramas e boxplot para verificar a distribuição dos dados
 
 Nessa etapa, o objetivo foi conhecer os dados, seus tipos, usar métricas estatísticas para identificar outliers no escopo do negócio e também analisar métricas estatísticas básicas como: média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Nessa etapa também foram feitos alguns ajustes em features do dataset, como preenchimento de NA's por exemplo.
 
-***Passo 02 - Feature Engineering:*** 
+***Passo 02 - Feature Engineering:***
+
 Separar os grupos de features por categorias intuitivamente
 Elaborar hipóteses empíricas para cada categoria
 Eliminar hipóteses que não possam ser provadas com os dados
@@ -77,13 +79,15 @@ Criar/derivar novas features para responder as perguntas e provar/refutar as hip
 
 Nessa etapa, foi desenvolvido um mapa mental para analisar o fenômeno, suas variáveis e os principais aspectos que impactam cada variável. A partir das características do hipóteses e da necessidade de novos atributos, foram elevados novos recursos a partir das variáveis originais, a fim de melhorar o fenômeno do ser modelado.
 
-***Passo 03 - Filtragem dos dados:*** 
+***Passo 03 - Filtragem dos dados:***
+
 Deletar linhas redundantes (lojas fechadas, vendas zeradas)
 Deletar colunas supérfluas, redundantes ou com dados insuficientes (Loja aberta ou fechada, clientes faltantes, mapa do mês, intervalo de promoção)
 
 O objetivo desta etapa foi filtrar linhas e excluir colunas que não são relevantes para o modelo ou não fazem parte do escopo do negócio, como por exemplo, desconsiderar dias que as lojas não estavam operando e/ou que não houveram vendas.
 
-***Passo 04 - Análise Exploratória dos dados:*** 
+***Passo 04 - Análise Exploratória dos dados:***
+
 Análise das features numéricas e categóricas
 Análise variada (plots, distribuição, outlier, range, matriz de confusão)
 Análise bivariada
@@ -95,13 +99,15 @@ Ordenar as features por relevância
 
 O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foram feitas analises univariadas, biváriadas e multivariadas, utilizandos os dados numéricos e categóricos do conjunto.
 
-***Passo 05 - Preparação dos dados:*** 
+***Passo 05 - Preparação dos dados:***
+
 Normalização (rescaling)
 Transformação (encoding 3 tipos)
 
 Nessa etapa, os dados foram preparados para o inicio das aplicações de modelos de machine learning. Foram utilizadas técnicas como Rescaling e Transformation, através de encodings e nature transformation.
 
-***Passo 06 - Seleção de Features:*** 
+***Passo 06 - Seleção de Features:***
+
 Dividir em treino e teste
 Séries temporais (divisão por datas)
 Feature selection com boruta
@@ -109,7 +115,8 @@ Feature selection manual
 
 O objetivo desta etapa foi selecionar os melhores atributos para treinar o modelo. Foi utilizado o algoritmo Boruta para fazer a seleção das variáveis, destacando as que tinham mais relevância para o fenômeno.
 
-***Passo 07 - Modelagem de Machine Learning:*** 
+***Passo 07 - Modelagem de Machine Learning:***
+
 Average model
 Linear regression
 Lasso
@@ -119,7 +126,8 @@ Comparação da performance dos modelos com Cross validation
 
 Nessa etapa foram feitos os testes e treinamento de alguns modelos de machine learning, onde foi possível comparar suas respectivas performance e feita a escolha do modelo ideal para o projeto. Inclusive foi utilizada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.
 
-***Passo 08 - Hyperparameter Fine Tunning:*** 
+***Passo 08 - Hyperparameter Fine Tunning:***
+
 Seleção do método de Fine Tuning
 Random, Grid, Bayesian
 Escolha do Random Search
