@@ -63,7 +63,7 @@ Esta é a etapa inicial do projeto para conhecer os dados e as dimensões do dat
 ***Passo 02 - Feature Engineering:***
 
 Na etapa de Engenharia das Features o foco foi em Separar os grupos de features por categorias intuitivamente (mapa mental) de forma a vizualizar alguns insights e através de brainstorm criar uma lista empírica de hipóteses além de filtrar e eliminar as hipóteses que não possam ser provadas. À partir da lista final de hipóteses criar e derivar novas features para responder às perguntas e provar ou refutar estas hipóteses.
-[Mapa mental](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/DAILY_STORE_SALES.png)
+![Mapa mental](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/DAILY_STORE_SALES.png)
 
 ***Passo 03 - Filtragem dos dados:***
 
