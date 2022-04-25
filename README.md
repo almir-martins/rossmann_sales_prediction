@@ -112,9 +112,11 @@ Cross Validation Performance
 | Linear Regresion | 2081.73 +/- 295.63 | 0.3 +/- 0.02 | 2952.52 +/- 468.37 |
 | Lasso | 2116.38 +/- 341.5 | 0.29 +/- 0.01 | 3057.75 +/- 504.26 |
 
-*(resultado do cross validation)*
+Dentre os modelos testados houve pequena diferença nas métricas do Random Forest e do XGBoost, que foram os dois melhores. A escolha do modelo XGBoost foi baseado, entre outros fatores menores, no tempo de processamento do algoritmo, que é muito menor que o Random Forest, significando redução de custos de processamento e cloud.
 
 ***Passo 08 - Hyperparameter Fine Tunning:***
+
+Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Random Search, Grid Search e Bayesian Search, sendo o primeiro selecionado baseado no tempo de processamento e na viabilidade de entregar um produto MVP na primeira iteração do CRISP.
 
 | Model Name | MAE | MAPE | RMSE |
 |  --- | --- | --- | --- |
@@ -128,12 +130,6 @@ Cross Validation Performance
 | XGBoost | 945.64 +/- 129.29 | 0.13 +/- 0.01 | 1368.71 +/- 189.71 |
 | XGBoost | 1791.7 +/- 197.04 | 0.25 +/- 0.01 | 2567.88 +/- 271.0 |
 | XGBoost | 782.18 +/- 124.32 | 0.11 +/- 0.01 | 1134.51 +/- 185.33 |
-
-Seleção do método de Fine Tuning
-Random, Grid, Bayesian
-Escolha do Random Search
-
-Tendo a escolha do algorotimo XBoost na etapa anterior, foi feita uma analise através do método Randon Search para escolher os melhores valores para cada um dos parâmetros do modelo. Ao final dessa etapa foi possível obter os valores finais da performance do modelo.
 
 ***Passo 09 - Tradução e interpretação de erros:*** O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, onde foi possível avaliar a performance do modelo com o viés de negócio, demonstrando o resultado financeiro que pode ser esperado se aplicado o modelo desenvolvido.
 
