@@ -91,7 +91,16 @@ Lasso
 Random Forest
 XGBoost
 Comparação da performance dos modelos com Cross validation
-Na modelagem foram realizados os treinamentos dos modelos de machine learning selecionados para o problema em questão. A desempenho dos modelos testados foram comparados no modo single performance. Na segunda parte da modelagem foi seleciona entre os métodos de Cross Validation: Random Search, Grid Search e Bayesian Search. A seleção do método de validação cruzada se deu pelo tempo de processamento e pelo fato de o método CRISP ser cíclico, podendo essa escolha ser alterada em uma nova iteração.
+
+Na modelagem foram realizados os treinamentos dos modelos de machine learning selecionados para o problema em questão:
+
+- Average model
+- Linear regression
+- Lasso
+- Random Forest
+- XGBoost
+
+ Na primeira parte da etapa foi realizado a avaliação simples do modelo (Single Performance) e na segunda parte foi aplicado o método de Cross Validation. O método de validação cruzada consiste em separar os dados de teste em dois conjuntos: conjunto de teste e o menor de validação, após treinar e medir o desempenho do modelo esses dois conjuntos são redimensionados de forma a testar e validar o modelo em todas as porções dos dados.
 
 Single Performance:
 | Model Name | MAE | MAPE | RMSE |
@@ -109,21 +118,23 @@ Cross Validation Performance
 | XGBoost Regressor | 905.77 +/- 182.34 | 0.13 +/- 0.02 | 1304.21 +/- 266.28 |
 | Linear Regresion | 2081.73 +/- 295.63 | 0.3 +/- 0.02 | 2952.52 +/- 468.37 |
 | Lasso | 2116.38 +/- 341.5 | 0.29 +/- 0.01 | 3057.75 +/- 504.26 |
+
 *(resultado do cross validation)*
 
 ***Passo 08 - Hyperparameter Fine Tunning:***
 
-MODEL NAME	MAE	MAPE	RMSE
-0	XGBoost	1774.97 +/- 190.59	0.25 +/- 0.01	2544.36 +/- 255.35
-0	XGBoost	818.38 +/- 141.72	0.11 +/- 0.01	1185.16 +/- 207.73
-0	XGBoost	865.39 +/- 122.18	0.12 +/- 0.01	1249.63 +/- 188.49
-0	XGBoost	929.53 +/- 149.83	0.13 +/- 0.01	1340.54 +/- 210.67
-0	XGBoost	1027.43 +/- 121.43	0.14 +/- 0.01	1470.98 +/- 159.45
-0	XGBoost	1768.97 +/- 192.54	0.25 +/- 0.01	2537.99 +/- 262.93
-0	XGBoost	4108.73 +/- 493.42	0.5 +/- 0.02	5048.82 +/- 600.72
-0	XGBoost	945.64 +/- 129.29	0.13 +/- 0.01	1368.71 +/- 189.71
-0	XGBoost	1791.7 +/- 197.04	0.25 +/- 0.01	2567.88 +/- 271.0
-0	XGBoost	782.18 +/- 124.32	0.11 +/- 0.01	1134.51 +/- 185.33
+| Model Name | MAE | MAPE | RMSE |
+|  --- | --- | --- | --- |
+| XGBoost | 1774.97 +/- 190.59 | 0.25 +/- 0.01 | 2544.36 +/- 255.35 |
+| XGBoost | 818.38 +/- 141.72 | 0.11 +/- 0.01 | 1185.16 +/- 207.73 |
+| XGBoost | 865.39 +/- 122.18 | 0.12 +/- 0.01 | 1249.63 +/- 188.49 |
+| XGBoost | 929.53 +/- 149.83 | 0.13 +/- 0.01 | 1340.54 +/- 210.67 |
+| XGBoost | 1027.43 +/- 121.43 | 0.14 +/- 0.01 | 1470.98 +/- 159.45 |
+| XGBoost | 1768.97 +/- 192.54 | 0.25 +/- 0.01 | 2537.99 +/- 262.93 |
+| XGBoost | 4108.73 +/- 493.42 | 0.5 +/- 0.02 | 5048.82 +/- 600.72 |
+| XGBoost | 945.64 +/- 129.29 | 0.13 +/- 0.01 | 1368.71 +/- 189.71 |
+| XGBoost | 1791.7 +/- 197.04 | 0.25 +/- 0.01 | 2567.88 +/- 271.0 |
+| XGBoost | 782.18 +/- 124.32 | 0.11 +/- 0.01 | 1134.51 +/- 185.33 |
 
 Seleção do método de Fine Tuning
 Random, Grid, Bayesian
