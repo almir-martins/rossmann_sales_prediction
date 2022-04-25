@@ -109,6 +109,7 @@ Cross Validation Performance
 | XGBoost Regressor | 905.77 +/- 182.34 | 0.13 +/- 0.02 | 1304.21 +/- 266.28 |
 | Linear Regresion | 2081.73 +/- 295.63 | 0.3 +/- 0.02 | 2952.52 +/- 468.37 |
 | Lasso | 2116.38 +/- 341.5 | 0.29 +/- 0.01 | 3057.75 +/- 504.26 |
+
 *(resultado do cross validation)*
 
 ***Passo 08 - Hyperparameter Fine Tunning:***
