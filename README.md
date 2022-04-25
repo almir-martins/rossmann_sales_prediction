@@ -85,13 +85,6 @@ Nesta etapa o objetivo foi selecionar os melhores atributos para treinar o model
 
 ***Passo 07 - Modelagem de Machine Learning:***
 
-Average model
-Linear regression
-Lasso
-Random Forest
-XGBoost
-Comparação da performance dos modelos com Cross validation
-
 Na modelagem foram realizados os treinamentos dos modelos de machine learning selecionados para o problema em questão:
 
 - Average model
