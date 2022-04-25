@@ -132,18 +132,18 @@ Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Ra
 | XGBoost | 782.18 +/- 124.32 | 0.11 +/- 0.01 | 1134.51 +/- 185.33 |
 
 ***Passo 09 - Tradução e interpretação de erros:***
-*Em desenvolvimento*
 
+*Em desenvolvimento*
 O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, onde foi possível avaliar a performance do modelo com o viés de negócio, demonstrando o resultado financeiro que pode ser esperado se aplicado o modelo desenvolvido.
 
 ***Passo 10 - Deploy do modelo em produção:***
-*Em desenvolvimento*
 
+*Em desenvolvimento*
 Após execução bem sucedida do modelo, o objetivo foi publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
 
 ***Passo 11 - Bot do Telegram:***
-*Em desenvolvimento*
 
+*Em desenvolvimento*
 A etapa final do projeto foi criar um bot no app de mensagens - Telegram, que possibilita consultar as previsões a qualquer momento e lugar, visto que também foi feito o deploy na plataforma em nuvem.
 
 # 3 - Principais insights:
