@@ -103,16 +103,27 @@ Single Performance:
 | Linear Regression Regularized | 1891.70 | 0.29 | 2744.45 |
 
 Cross Validation Performance
- Model Name | MAE | MAPE | RMSE |
+| Model Name | MAE | MAPE | RMSE |
 |  --- | --- | --- | --- |
 | Random Forest | 837.97 +/- 218.4 | 0.12 +/- 0.02 | 1256.45 +/- 318.73 |
 | XGBoost Regressor | 905.77 +/- 182.34 | 0.13 +/- 0.02 | 1304.21 +/- 266.28 |
 | Linear Regresion | 2081.73 +/- 295.63 | 0.3 +/- 0.02 | 2952.52 +/- 468.37 |
 | Lasso | 2116.38 +/- 341.5 | 0.29 +/- 0.01 | 3057.75 +/- 504.26 |
-
 *(resultado do cross validation)*
 
 ***Passo 08 - Hyperparameter Fine Tunning:***
+
+MODEL NAME	MAE	MAPE	RMSE
+0	XGBoost	1774.97 +/- 190.59	0.25 +/- 0.01	2544.36 +/- 255.35
+0	XGBoost	818.38 +/- 141.72	0.11 +/- 0.01	1185.16 +/- 207.73
+0	XGBoost	865.39 +/- 122.18	0.12 +/- 0.01	1249.63 +/- 188.49
+0	XGBoost	929.53 +/- 149.83	0.13 +/- 0.01	1340.54 +/- 210.67
+0	XGBoost	1027.43 +/- 121.43	0.14 +/- 0.01	1470.98 +/- 159.45
+0	XGBoost	1768.97 +/- 192.54	0.25 +/- 0.01	2537.99 +/- 262.93
+0	XGBoost	4108.73 +/- 493.42	0.5 +/- 0.02	5048.82 +/- 600.72
+0	XGBoost	945.64 +/- 129.29	0.13 +/- 0.01	1368.71 +/- 189.71
+0	XGBoost	1791.7 +/- 197.04	0.25 +/- 0.01	2567.88 +/- 271.0
+0	XGBoost	782.18 +/- 124.32	0.11 +/- 0.01	1134.51 +/- 185.33
 
 Seleção do método de Fine Tuning
 Random, Grid, Bayesian
