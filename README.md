@@ -114,7 +114,7 @@ Cross Validation Performance
 
 Dentre os modelos testados houve pequena diferença nas métricas do Random Forest e do XGBoost, que foram os dois melhores. A escolha do modelo XGBoost foi baseado, entre outros fatores menores, no tempo de processamento do algoritmo, que é muito menor que o Random Forest, significando redução de custos de processamento e cloud.
 
-***Passo 08 - Hyperparameter Fine Tunning:***
+***Passo 08 - Hyperparameter Fine Tuning:***
 
 Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Random Search, Grid Search e Bayesian Search, sendo o primeiro selecionado baseado no tempo de processamento e na viabilidade de entregar um produto MVP na primeira iteração do CRISP.
 
@@ -131,14 +131,17 @@ Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Ra
 | XGBoost | 1791.7 +/- 197.04 | 0.25 +/- 0.01 | 2567.88 +/- 271.0 |
 | XGBoost | 782.18 +/- 124.32 | 0.11 +/- 0.01 | 1134.51 +/- 185.33 |
 
-***Passo 09 - Tradução e interpretação de erros:*** O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, onde foi possível avaliar a performance do modelo com o viés de negócio, demonstrando o resultado financeiro que pode ser esperado se aplicado o modelo desenvolvido.
+***Passo 09 - Tradução e interpretação de erros:***
+*Em desenvolvimento*
 
-***Passo 10 - Deploy do modelo em produção:*** 
+O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, onde foi possível avaliar a performance do modelo com o viés de negócio, demonstrando o resultado financeiro que pode ser esperado se aplicado o modelo desenvolvido.
+
+***Passo 10 - Deploy do modelo em produção:***
 *Em desenvolvimento*
 
 Após execução bem sucedida do modelo, o objetivo foi publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
 
-***Passo 11 - Bot do Telegram:*** 
+***Passo 11 - Bot do Telegram:***
 *Em desenvolvimento*
 
 A etapa final do projeto foi criar um bot no app de mensagens - Telegram, que possibilita consultar as previsões a qualquer momento e lugar, visto que também foi feito o deploy na plataforma em nuvem.
