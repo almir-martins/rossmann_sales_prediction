@@ -116,7 +116,7 @@ Dentre os modelos testados houve pequena diferença nas métricas do Random Fore
 
 ***Passo 08 - Hyperparameter Fine Tuning:***
 
-Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Random Search, Grid Search e Bayesian Search, sendo o primeiro selecionado baseado no tempo de processamento e na viabilidade de entregar um produto MVP na primeira iteração do CRISP.
+Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Random Search, Grid Search e Bayesian Search. A decisão por usar o Random Search foi baseada no tempo de processamento e nos custos relacionados, haja visto que usando o Random Search com 10 kfolds (iterações) levou mais de 15 horas em um PC I3 com 16gb de memória RAM, em um ambiente corporativo isso seria traduzido em custos com serviços de Cloud por exemplo. Outro ponto importante é ressaltar a natureza cíclica do método CRISP, que em outras iterações permite mudar o método de fine tuning e até o modelo de machine learning selecionado.
 
 | Model Name | MAE | MAPE | RMSE |
 |  --- | --- | --- | --- |
