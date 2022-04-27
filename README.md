@@ -198,13 +198,11 @@ No passo de engenharia de features foram levantadas algumas hipóteses empírica
 Foram utilizados cinco modelos para aplicar sobre os dados do projeto, sendo três lineares e dois não lineares. O modelo de média simples foi inserido para servir de referência (baseline) na medição do desempenho dos demais. Os modelos lineares servem para avaliar a complexidade de aprendizado do conjunto de dados usando o princípio de Occan's Razor que prega a busca sempre pelo modelo mais simples que solucione o problema, em sintonia com a filosofia do MVP. A performance dos modelos lineares mostrou a necessidade de modelos mais complexos.
 
 Modelos Lineares:
-
 - Média
 - Linear Regression
 - Linear Regression Regularized
 
 Modelos Não Lineares:
-
 - Random Forest Regressor
 - XGBoost Regressor
 
@@ -224,8 +222,11 @@ Performance final do modelo escolhido após Hyperparameter Fine Tuning:
 
 # 5 - Resultado final - Model performance vs Business Values
 
-O resultado final do projeto foi satisfatório para a maior parte das lojas abrangidas nos dados, conforme gráfico abaixo (Essas lojas em específico podem conter particularidades e possivelmente num segundo ciclo desse projeto, algo poderia ser feito para melhor a performance e predição para elas).
-<imagem>
+O resultado final do projeto foi muito satisfatório, sendo entregue a solução necessária para o problema de negócio. Apenas um número muito pequeno de lojas mostrou necessitar de ajustes futuros por destoar da média das predições, conforme pode ser visto no gráfico abaixo, mas isso pode ser facilmente corrigido nas outras iterações do CRISP. Em outros ciclos do projeto também poderão ser melhorados os modelos, o tuning dos parâmetros e a elaboraçãode novas hipóteses.
+
+*Resultado das previsões*
+![Resultado](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/final.png)
+
 A maior parte das lojas tiveram o erro MAPE muito próximo do erro performado no modelo - MAPE Error de 9%
 
 Como indicado no resumo prévio do projeto, o resultado que pode ser obtido utilizando-se do modelo, considerando o melhor e pior cenário, é o seguinte:
@@ -236,7 +237,8 @@ Como indicado no resumo prévio do projeto, o resultado que pode ser obtido util
 | best scenario | US$ 283,417,771.65 |
 
 Podemos observar o performance do modelo, avaliando a relação entre as vendas (dados de teste) e as predições:
-<imagem>
+*Resultado das previsões*
+![Resultado 2](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/final2.png)
 
 # 6 - Conclusão
 
