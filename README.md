@@ -174,19 +174,19 @@ A etapa final do projeto é criar um bot no app de mensagens - Telegram, que pos
 
 # 3 - Principais insights:
 
-No passo de engenharia de features foram levantadas algumas hipóteses empíricas baseadas no problema de negócio e foram criadas/derivadas também algumas features para que essas hipóteses fossem respndidas. Na etapa da análise as hipóteses puderam ser provadas ou refutadas. Segue abaixo algumas deestas hipóteses:
+No passo de engenharia de features foram levantadas algumas hipóteses empíricas baseadas no problema de negócio e foram criadas/derivadas também algumas features para que essas hipóteses fossem respondidas. Na etapa da análise as hipóteses puderam ser provadas ou refutadas. Segue abaixo algumas destas hipóteses:
 
-*Hipótese 1*: Lojas com mais dias de promoção deveriam vender mais. Refutada, lojas com promoção extendida vendem menos que com promoção tradicional.
+*Hipótese 1*: Lojas com mais dias de promoção deveriam vender mais. *Refutada*, lojas com promoção extendida vendem menos que com promoção tradicional.
 
 *Promoções vs Vendas*
 ![Hipótese 1](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/h1.png)
 
-*Hipótese 2*: Lojas com concorrentes mais próximos deveriam vender menos. Refutada, lojas com concorrência próxima vendem mais.
+*Hipótese 2*: Lojas com concorrentes mais próximos deveriam vender menos. *Refutada*, lojas com concorrência próxima vendem mais.
 
 *Vendas vs Distância do concorrente*
 ![Hipótese 2](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/h2.png)
 
-*Hipótese 3*: Lojas devem vender mais no segundo semestre. Refutada, lojas vendem menos no segundo semestre do ano.
+*Hipótese 3*: Lojas devem vender mais no segundo semestre. *Refutada*, lojas vendem menos no segundo semestre do ano.
 
 *Vendas por Mês*
 ![Hipótese 3](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/h3.png)
