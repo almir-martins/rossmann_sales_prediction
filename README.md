@@ -195,18 +195,18 @@ No passo de engenharia de features foram levantadas algumas hipóteses empírica
 
 # 4 - Performance dos Modelos de Machine Learning:
 
-O dados do projeto foram testados com modelos lineares e não lineares.Foi utilizada a estratégia de selecionar 5 tipos de modelos: Modelo de média, dois modelos lineares, e dois não-lineares. A média por exemplo serviu como base de referência. Os modelos lineares servem para avaliar a complexidade de aprendizado do conjunto de dados. Caso a performance fosse ruim, poderia entender que seria necessário um modelo mais complexo.
+Foram utilizados cinco modelos para aplicar sobre os dados do projeto, sendo três lineares e dois não lineares. O modelo de média simples foi inserido para servir de referência (baseline) na medição do desempenho dos demais. Os modelos lineares servem para avaliar a complexidade de aprendizado do conjunto de dados usando o princípio de Occan's Razor que prega a busca sempre pelo modelo mais simples que solucione o problema, em sintonia com a filosofia do MVP. A performance dos modelos lineares mostrou a necessidade de modelos mais complexos.
 
-- Modelos Lineares:
+Modelos Lineares:
 
-    Média
-    Linear Regression
-    Linear Regression Regularized
+- Média
+- Linear Regression
+- Linear Regression Regularized
 
-- Modelos Não Lineares:
+Modelos Não Lineares:
 
-    Random Forest Regressor
-    XGBoost Regressor
+- Random Forest Regressor
+- XGBoost Regressor
 
 Comparação da performance dos modelos:
 | Model Name | MAE CV | MAPE CV | RMSE CV |
