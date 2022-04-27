@@ -248,4 +248,16 @@ O deploy do modelo desenvolvido e da aplicação do Bot do Telegram foram constr
 
 Toda documentação do projeto pode ser consultada no repositório, incluindo os notebooks desenvolvidos e todos os scritps finais para as aplicações web.
 
+# 7 - Próximos passos
+
+Começar um segundo ciclo do CRISP para analisar o problema sob o ponto de vista da experiência adquirida durante o pipeline de desenvolvimento procurando novas abordagens. Possíveis pontos à serem revisitados:
+
+- Nova abordagem no tratamento de dados faltantes;
+- Fazer Rescaling e Encoding utilizando métodos diferentes;
+- Criar novas hipóteses;
+- Criar/derivar novas features;
+- Usar métodos mais robustos para seleção dos melhores Hiper parâmetros;
+- Testar diferentes algoritmos de Machine Learning.
+
+
 Este repositório contém código para a previsão de vendas da rede de drogarias Rossmann. Os dados usados estão disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). Todas as informações adicionais foram criadas para dar contexto ao problema.
