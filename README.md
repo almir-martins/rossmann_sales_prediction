@@ -143,6 +143,7 @@ O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar 
 | 3 | € 264,181.34 | € 263,633.38 | € 264,729.31 | € 547.97 | 8.1 % |
 | 4 | € 338,874.09 | € 337,950.47 | € 339,797.71 | € 923.62 | 8.9 % |
 | 5 | € 173,785.28 | € 173,402.96 | € 174,167.61 | € 382.33 | 8.7 % |
+
 ***Passo 10 - Deploy do modelo em produção:***
 
 *Em desenvolvimento*
