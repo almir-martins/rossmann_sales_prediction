@@ -224,7 +224,7 @@ Performance final do modelo escolhido após Hyperparameter Fine Tuning:
 
 O resultado final do projeto foi muito satisfatório, sendo entregue a solução necessária para o problema de negócio. Apenas um número muito pequeno de lojas mostrou necessitar de ajustes futuros por destoar da média das predições, conforme pode ser visto no gráfico abaixo, mas isso pode ser facilmente corrigido nas outras iterações do CRISP. Em outros ciclos do projeto também poderão ser melhorados os modelos, o tuning dos parâmetros e a elaboraçãode novas hipóteses.
 
-*Resultado das previsões*
+*Previsões vs Erro MAPE*
 ![Resultado](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/final.png)
 
 A maior parte das lojas tiveram o erro MAPE muito próximo do erro performado no modelo - MAPE Error de 9%
@@ -237,15 +237,15 @@ Como indicado no resumo prévio do projeto, o resultado que pode ser obtido util
 | best scenario | US$ 283,417,771.65 |
 
 Podemos observar o performance do modelo, avaliando a relação entre as vendas (dados de teste) e as predições:
-*Resultado das previsões*
+*Vendas reais vs Previsões*
 ![Resultado 2](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/final2.png)
 
 # 6 - Conclusão
 
-O projeto desenvolvido foi concluído com êxito, onde foi possível projetar as vendas das próximas semanas para que o CFO tenha informações reais para criar o budget das lojas, podendo consultar em tempo real cada predição.
+O projeto desenvolvido foi concluído com êxito, onde foi possível projetar as vendas das próximas semanas para que o CFO tenha informações reais para extimar o budget das lojas, podendo consultar em tempo real cada predição.
 
-    O deploy do modelo desenvolvido e da aplicação do Bot do Telegram foram construídos no ambiente em nuvem do Heroku e estão em funcionamento.
+O deploy do modelo desenvolvido e da aplicação do Bot do Telegram foram construídos no ambiente em nuvem do Heroku e estão em funcionamento.
 
-    Toda documentação do projeto pode ser consultada no repositório, incluindo os notebooks desenvolvidos e todos os scritps finais para as aplicações web.
+Toda documentação do projeto pode ser consultada no repositório, incluindo os notebooks desenvolvidos e todos os scritps finais para as aplicações web.
 
 Este repositório contém código para a previsão de vendas da rede de drogarias Rossmann. Os dados usados estão disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). Todas as informações adicionais foram criadas para dar contexto ao problema.
