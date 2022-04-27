@@ -133,7 +133,7 @@ Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Ra
 
 ***Passo 09 - Tradução e interpretação de erros:***
 
-O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar e estudar as métricas de erros utilizadas e observar se o modelo está subestimando ou superestimando suas previsões.
+O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar e estudar as métricas de erros utilizadas e observar se o modelo está subestimando ou superestimando suas previsões. Aqui também é disponibilizado o resultado do modelo para a equipe de negócios usando moeda corrente, percentuais e indicadores de Melhores/Piores cenários.
 
 ***Passo 10 - Deploy do modelo em produção:***
 
