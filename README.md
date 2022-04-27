@@ -145,14 +145,20 @@ O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar 
 | 5 | € 173,785.28 | € 173,402.96 | € 174,167.61 | € 382.33 | 8.7 % |
 
 *Resultado total:*
-| Scenario | Values |
+| Cenário | Valores |
 | --- | --- |
-| predictions | € 282,796,384.00 |
-| worst_scenario | € 282,097,185.79 |
-| best_scenario | € 283,495,623.37 |
+| Predições | € 282,796,384.00 |
+| Pior cenário | € 282,097,185.79 |
+| Melhor cenário | € 283,495,623.37 |
 
 *Previsão x Vendas reais*
 ![Previsão x Vendas reais](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/plots2.png)
+
+*Sobrestimação e Superestimação*
+![Sobrestimação e Superestimação](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/plots3.png)
+
+*Análise de resíduos*
+![Análise de resíduos](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/plots4.png)
 
 ***Passo 10 - Deploy do modelo em produção:***
 
