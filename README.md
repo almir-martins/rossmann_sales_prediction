@@ -180,7 +180,12 @@ Hipótese 1: Lojas com sortimento maior devem vender mais. Falsa: Lojas com uma 
 
 Hipótese 2: As lojas devem vender mais ao longo dos anos. Falsa: As lojas vendem menos ao longo dos anos.
 
-*Hipótese 3*: Lojas devem vender mais no segundo semestre. Refutada: Lojas vendem menos no segundo semestre do ano.
+*Hipótese 2*: Lojas com concorrentes mais próximos deveriam vender menos: Refutada, lojas com concorrência próxima vendem mais.
+
+*Vendas vs distância do concorrente*
+![Hipótese 3](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/h2.png)
+
+*Hipótese 3*: Lojas devem vender mais no segundo semestre. Refutada, lojas vendem menos no segundo semestre do ano.
 
 *Vendas por mês*
 ![Hipótese 3](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/h3.png)
