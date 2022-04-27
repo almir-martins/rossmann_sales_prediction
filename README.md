@@ -163,20 +163,27 @@ O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar 
 ***Passo 10 - Deploy do modelo em produção:***
 
 *Em desenvolvimento*
-Após execução bem sucedida do modelo, o objetivo foi publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
+
+Após execução bem sucedida do modelo o objetivo é publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
 
 ***Passo 11 - Bot do Telegram:***
 
 *Em desenvolvimento*
-A etapa final do projeto foi criar um bot no app de mensagens - Telegram, que possibilita consultar as previsões a qualquer momento e lugar, visto que também foi feito o deploy na plataforma em nuvem.
+
+A etapa final do projeto é criar um bot no app de mensagens - Telegram, que possibilita consultar as previsões a qualquer momento e lugar.
 
 # 3 - Principais insights:
+
+No passo de engenharia de features foram levantadas algumas hipóteses empíricas baseadas no problema de negócio e foram criadas/derivadas também algumas features para que essas hipóteses fossem respndidas. Na etapa da análise as hipóteses puderam ser provadas ou refutadas. Segue abaixo algumas deestas hipóteses:
 
 Hipótese 1: Lojas com sortimento maior devem vender mais. Falsa: Lojas com uma variedade maior vendem MENOS.
 
 Hipótese 2: As lojas devem vender mais ao longo dos anos. Falsa: As lojas vendem menos ao longo dos anos.
 
-Hipótese 3: Lojas devem vender mais no segundo semestre. Falsa: Lojas vendem menos no segundo semestre do ano.
+Hipótese 3: Lojas devem vender mais no segundo semestre. Refutada: Lojas vendem menos no segundo semestre do ano.
+
+*Hipótese 3*
+![Hipótese 3](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/h3.png)
 
 **(Demais insights podem ser consultados nos notebooks do projeto)**
 
