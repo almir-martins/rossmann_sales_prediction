@@ -10,11 +10,11 @@ A Rossmann é uma das maiores redes de drogarias da Europa com cerca de 56.200 f
 
 ## 1.2. Problema do Negócio
 
-A rede Rossmann pretende renovar a fachada das lojas alterando sua identidade visual com intuito de melhorar sua imagem e vincular a marca à suas novas metas e valores. O setor financeiro da rede solcitou aos gerentes de cada loja que façam uma previsão das vendas diárias para seis semanas no futuro, para calcular o impacto financeiro da medida. As vendas de cada loja são influenciadas por muitos fatores, entre eles: promoções, concorrência, feriados, sazonalidade e localização. Com milhares de gerentes fazendo suas predições baseado nas circunstâncais de sua loja a acurácia dos resultados pode ser bastante variada e assim a tarefa se torna um grande desafio para a rede.
+A rede Rossmann pretende renovar a fachada das lojas alterando sua identidade visual com intuito de melhorar sua imagem e vincular a marca à suas novas metas e valores. O setor financeiro da rede solicitou aos gerentes de cada loja que façam uma previsão das vendas diárias para seis semanas no futuro, para calcular o impacto financeiro da medida. As vendas de cada loja são influenciadas por muitos fatores, entre eles: promoções, concorrência, feriados, sazonalidade e localização. Com milhares de gerentes fazendo suas predições baseado nas circunstâncias de sua loja a acurácia dos resultados pode ser bastante variada e assim a tarefa se torna um grande desafio para a rede.
 
 ## 1.3. Sobre os dados
 
-Para solucionar o problema acima a empresa disponibilizou o histórico de vendas de 1.115 lojas no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). O histórico consiste em um Dataset com os dados de vendas destas lojas de 2015 até 2017, lembrando que algumas lojas do dataset estão fechadas temprariamente para reforma. O dataset apresenta as seguintes features:
+Para solucionar o problema acima a empresa disponibilizou o histórico de vendas de 1.115 lojas no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). O histórico consiste em um Dataset com os dados de vendas destas lojas de 2015 até 2017, lembrando que algumas lojas do dataset estão fechadas temporariamente para reforma. O dataset apresenta as seguintes features:
 
 | Atributos | Descrição |
 | ------ | ------- |
@@ -38,7 +38,7 @@ Para solucionar o problema acima a empresa disponibilizou o histórico de vendas
 
 ## 2.1. Planejamento da solução
 
-Para desenvolvimento da solução utilizei um processo de modelagem cíclico chamado [CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/). Este processo baseia-se em uma separação lógica e clara dos passos para desenvolvimento da solução e em sua estrutura cíclica, de forma que um ciclo consiste percorrer todas as fases do desenvolvimento e a entrega ágil de uma solução (Minimum Viable Product). Sua natureza cíclica permite não só o refatoramento do código como também a formulação de outras hipóteses, criação de novas features, melhora dos modelos, fine tuning, etc.
+Para desenvolvimento da solução utilizei um processo de modelagem cíclico chamado [CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/). Este processo baseia-se em uma separação lógica e clara dos passos para desenvolvimento da solução e em sua estrutura cíclica, de forma que um ciclo consiste em percorrer todas as fases do desenvolvimento e a entrega ágil de uma solução (Minimum Viable Product). Sua natureza cíclica permite não só o refatoramento do código como também a formulação de outras hipóteses, criação de novas features, melhora dos modelos, fine tuning, etc.
 
 ***Rascunho - CRISP***
 ![Rascunho - CRISP](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/CRISP.jpg)
@@ -58,11 +58,11 @@ A sequência de tarefas realizadas no desenvolvimento da solução, seguindo a m
 
 ***Passo 01 - Descrição dos dados:***
 
-Esta é a etapa inicial do projeto para conhecer os dados e as dimensões do dataset, verificar o tipos das colunas, usar estatísca descritiva para mensurar a média, moda, mediana, kurtosis, desvio patrão, skewness e range dos dados. Também foram separados os dados por tipo numéricos ou descritivos, alterado os nomes das colunas e feito o planejamento e o preenchimentos dos valores faltantes de forma a fazer sentido para o problema.
+Esta é a etapa inicial do projeto para conhecer os dados e as dimensões do dataset, verificar os tipos das colunas, usar estatística descritiva para mensurar a média, moda, mediana, kurtosis, desvio patrão, skewness e range dos dados. Também foram separados os dados por tipos numéricos ou descritivos, alterado os nomes das colunas e feito o planejamento e o preenchimentos dos valores faltantes de forma a fazer sentido para o problema.
 
 ***Passo 02 - Feature Engineering:***
 
-Na etapa de Engenharia das Features o foco foi em Separar os grupos de features por categorias intuitivamente (mapa mental) de forma a vizualizar alguns insights e através de brainstorm criar uma lista empírica de hipóteses além de filtrar e eliminar as hipóteses que não possam ser provadas. À partir da lista final de hipóteses criar e derivar novas features para responder às perguntas e provar ou refutar estas hipóteses.
+Na etapa de Engenharia das Features o foco foi em Separar os grupos de features por categorias intuitivamente (mapa mental) de forma a visualizar alguns insights e através de brainstorm criar uma lista empírica de hipóteses além de filtrar e eliminar as hipóteses que não possam ser provadas. À partir da lista final de hipóteses criar e derivar novas features para responder às perguntas e provar ou refutar estas hipóteses.
 ![Mapa mental](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/DAILY_STORE_SALES.png)
 (mapas mentais criados usando a ferramenta [Coggle](https://coggle.it/))
 
@@ -72,12 +72,12 @@ O objetivo desta etapa foi filtrar linhas e excluir colunas que não são releva
 
 ***Passo 04 - Análise Exploratória dos dados:***
 
-O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foi realizado análise das variáveis isoladamente (Análise variada), de cada variável em relação a variável reposta (Análise bivariada) e das variáveis em cojunto (Análise multivariada). Para tal foram usados histogramas para verificar a distribuição das variáveis, boxplot para análise de range e outliers, matriz de confusão para medir correlação, método de Kramer's V, entre outros. Também nessa fase foram provadas ou refutadas as hipóteses da etapa anterior além de ordenar as features por nível relevância para o modelo.
+O objetivo desta etapa foi explorar os dados para encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foi realizado análise das variáveis isoladamente (Análise variada), de cada variável em relação a variável reposta (Análise bivariada) e das variáveis em conjunto (Análise multivariada). Para tal foram usados histogramas para verificar a distribuição das variáveis, boxplot para análise de range e outliers, matriz de confusão para medir correlação, método de Kramer's V, entre outros. Também nessa fase foram provadas ou refutadas as hipóteses da etapa anterior além de ordenar as features por nível relevância para o modelo.
 ![Plots das variáveis](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/plots.png)
 
 ***Passo 05 - Preparação dos dados:***
 
-Nessa etapa os dados foram preparados para o inicio das aplicações de modelos de machine learning. Foi utilizada técnicas como Rescaling usando MinMaxScaler e RobustScaler conforme a característica das features e seus respectivos outliers, foi utilizado Encoding das variáveis categóricas usando One Hot Encoding, Ordinal Encoding, Laber Encoding e transformação de natureza usando Seno e Coseno. Por último a transformação da variável resposta usando o método logarítmo.
+Nessa etapa os dados foram preparados para o início das aplicações de modelos de machine learning. Foi utilizada técnicas como Rescaling usando MinMaxScaler e RobustScaler conforme a característica das features e seus respectivos outliers, foi utilizado Encoding das variáveis categóricas usando One Hot Encoding, Ordinal Encoding, Laber Encoding e transformação de natureza usando Seno e Coseno. Por último a transformação da variável resposta usando o método logarítmo.
 
 ***Passo 06 - Seleção de Features:***
 
@@ -138,18 +138,18 @@ O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar 
 *Amostra do resultado do modelo em Euros:*
 | id_loja | Predição | Pior cenário | Melhor cenário | Erro | Erro % |
 | --- | --- | --- | --- |  --- | --- |
-| 1 | € 159,820.91 | € 159,545.94 | € 160,095.87 | € 274.97 | 6.2 % |
-| 2 | € 175,638.09 | € 175,291.62 | € 175,984.57 | € 346.48 | 7.3 % |
-| 3 | € 264,181.34 | € 263,633.38 | € 264,729.31 | € 547.97 | 8.1 % |
-| 4 | € 338,874.09 | € 337,950.47 | € 339,797.71 | € 923.62 | 8.9 % |
-| 5 | € 173,785.28 | € 173,402.96 | € 174,167.61 | € 382.33 | 8.7 % |
+| 1 | € 159.820,91 | € 159.545,94 | € 160.095,87 | € 274,97 | 6.2 % |
+| 2 | € 175.638,09 | € 175.291,62 | € 175,984,57 | € 346,48 | 7.3 % |
+| 3 | € 264.181,34 | € 263.633,38 | € 264.729,31 | € 547,97 | 8.1 % |
+| 4 | € 338.874,09 | € 337.950,47 | € 339.797,71 | € 923,62 | 8.9 % |
+| 5 | € 173.785,28 | € 173.402,96 | € 174.167,61 | € 382,33 | 8.7 % |
 
 *Resultado total:*
 | Cenário | Valores |
 | --- | --- |
-| Predições | € 282,796,384.00 |
-| Pior cenário | € 282,097,185.79 |
-| Melhor cenário | € 283,495,623.37 |
+| Predições | € 282.796.384,00 |
+| Pior cenário | € 282.097.185,79 |
+| Melhor cenário | € 283.495.623,37 |
 
 *Previsão x Vendas reais*
 ![Previsão x Vendas reais](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/plots2.png)
@@ -176,7 +176,7 @@ A etapa final do projeto é criar um bot no app de mensagens - Telegram, que pos
 
 No passo de engenharia de features foram levantadas algumas hipóteses empíricas baseadas no problema de negócio e foram criadas/derivadas também algumas features para que essas hipóteses fossem respondidas. Na etapa da análise as hipóteses puderam ser provadas ou refutadas. Segue abaixo algumas destas hipóteses:
 
-*Hipótese 1*: Lojas com mais dias de promoção deveriam vender mais. *Refutada*, lojas com promoção extendida vendem menos que com promoção tradicional.
+*Hipótese 1*: Lojas com mais dias de promoção deveriam vender mais. *Refutada*, lojas com promoção estendida vendem menos que com promoção tradicional.
 
 *Promoções vs Vendas*
 ![Hipótese 1](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/h1.png)
@@ -218,11 +218,11 @@ Comparação da performance dos modelos:
 Performance final do modelo escolhido após Hyperparameter Fine Tuning:
 | Model Name | MAE | MAPE | RMSE |
  ------ | ----- | ---- | ---- |
-| XGBoost Regressor | 673.394631 | 0.097298 | 965.731681 | 
+| XGBoost Regressor | 673.394631 | 0.097298 | 965.731681 |
 
 # 5 - Resultado final - Model performance vs Business Values
 
-O resultado final do projeto foi muito satisfatório, sendo entregue a solução necessária para o problema de negócio. Apenas um número muito pequeno de lojas mostrou necessitar de ajustes futuros por destoar da média das predições, conforme pode ser visto no gráfico abaixo, mas isso pode ser facilmente corrigido nas outras iterações do CRISP. Em outros ciclos do projeto também poderão ser melhorados os modelos, o tuning dos parâmetros e a elaboraçãode novas hipóteses.
+O resultado final do projeto foi muito satisfatório, sendo entregue a solução necessária para o problema de negócio. Apenas um número muito pequeno de lojas mostrou necessitar de ajustes futuros por destoar da média das predições, conforme pode ser visto no gráfico abaixo, mas isso pode ser facilmente corrigido nas outras iterações do CRISP. Em outros ciclos do projeto também poderão ser melhorados os modelos, o tuning dos parâmetros e a elaboração de novas hipóteses.
 
 *Previsões vs Erro MAPE*
 ![Resultado](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/final.png)
@@ -232,21 +232,21 @@ A maior parte das lojas tiveram o erro MAPE muito próximo do erro performado no
 Como indicado no resumo prévio do projeto, o resultado que pode ser obtido utilizando-se do modelo, considerando o melhor e pior cenário, é o seguinte:
 | Scenarios | Values |
 | ---- | ---- |
-| predictions | US$ 282,662,848.00 |
-| worst scenario | US$ 281,907,880.11 |
-| best scenario | US$ 283,417,771.65 |
+| predictions | US$ 282.662.848,00 |
+| worst scenario | US$ 281.907.880,11 |
+| best scenario | US$ 283.417.771,65 |
 
-Podemos observar o performance do modelo, avaliando a relação entre as vendas (dados de teste) e as predições:
+Podemos observar a performance do modelo avaliando a relação entre as vendas (dados de teste) e as predições:
 *Vendas reais vs Previsões*
 ![Resultado 2](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/final2.png)
 
 # 6 - Conclusão
 
-O projeto desenvolvido foi concluído com êxito, onde foi possível projetar as vendas das próximas semanas para que o CFO tenha informações reais para extimar o budget das lojas, podendo consultar em tempo real cada predição.
+O projeto desenvolvido foi concluído com êxito, onde foi possível projetar as vendas das próximas semanas para que o CFO tenha informações reais para estimar o budget das lojas, podendo consultar em tempo real cada predição.
 
 O deploy do modelo desenvolvido e da aplicação do Bot do Telegram foram construídos no ambiente em nuvem do Heroku e estão em funcionamento.
 
-Toda documentação do projeto pode ser consultada no repositório, incluindo os notebooks desenvolvidos e todos os scritps finais para as aplicações web.
+Toda documentação do projeto pode ser consultada no repositório, incluindo os notebooks desenvolvidos e todos os scripts finais para as aplicações web.
 
 # 7 - Próximos passos
 
@@ -258,6 +258,5 @@ Começar um segundo ciclo do CRISP para analisar o problema sob o ponto de vista
 - Criar/derivar novas features;
 - Usar métodos mais robustos para seleção dos melhores Hiper parâmetros;
 - Testar diferentes algoritmos de Machine Learning.
-
 
 Este repositório contém código para a previsão de vendas da rede de drogarias Rossmann. Os dados usados estão disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales). Todas as informações adicionais foram criadas para dar contexto ao problema.
