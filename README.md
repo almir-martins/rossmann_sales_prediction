@@ -135,6 +135,14 @@ Nesta etapa foram analisados os métodos de fine tuning de hiper parâmetros: Ra
 
 O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar e estudar as métricas de erros utilizadas e observar se o modelo está subestimando ou superestimando suas previsões. Aqui também é disponibilizado o resultado do modelo para a equipe de negócios usando moeda corrente, percentuais e indicadores de Melhores/Piores cenários.
 
+*Resultado do modelo em Euros:*
+| id_loja | Predição | Pior cenário | Melhor cenário | Erro	| Erro % |
+|  --- | --- | --- | --- |  --- | --- |
+| 1 | € 159,820.91 | € 159,545.94 | € 160,095.87 | € 274.97 | 6.2 % |
+| 2 | € 175,638.09 | € 175,291.62 | € 175,984.57 | € 346.48 | 7.3 % |
+| 3 | € 264,181.34 | € 263,633.38 | € 264,729.31 | € 547.97 | 8.1 % |
+| 4 | € 338,874.09 | € 337,950.47 | € 339,797.71 | € 923.62 | 8.9 % |
+| 5 | € 173,785.28 | € 173,402.96 | € 174,167.61 | € 382.33 | 8.7 % |
 ***Passo 10 - Deploy do modelo em produção:***
 
 *Em desenvolvimento*
