@@ -14,9 +14,9 @@ model = pickle.load(
 # Inicializando a API
 app = Flask(__name__)
 
-# URL a ser chamada e o método do request
+# Route é a URL a ser chamada no navegador
 @app.route("/rossmann/predict", methods=["POST"])
-def rossmann_predict():
+def rossmann_predict(): # método
     # Pega o json que veio na requisição
     test_json = request.get_json()
 
@@ -30,7 +30,7 @@ def rossmann_predict():
 
         # Instanciando a classe Rossmann
         pipeline = Rossmann()
-        
+
         # Limpando os dados
         df1 = pipeline.data_cleaning(test_raw)
 
@@ -51,5 +51,4 @@ def rossmann_predict():
 
 
 if __name__ == "__main__":
-    app.run("0.0.0.0")
-    app.run(debug=True)
+    app.run(host="127.0.0.1")

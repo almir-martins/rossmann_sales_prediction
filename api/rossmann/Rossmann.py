@@ -1,4 +1,3 @@
-# Classe Rossmann
 import math
 import pickle
 import datetime
