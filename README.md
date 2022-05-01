@@ -168,6 +168,10 @@ Após execução bem sucedida do modelo o objetivo é publica-lo em um ambiente 
 - Cria uma classe com os métodos de limpeza, transformação, encoding e predição para encapsular o funcionamento do aplicativo;
 - Cria uma aplicação em Flask para ser o controler da arquitetura que vai receber as requisições, encaminhar para o modelo processar e devolver o resultado via response;
 - Criar a estrutura das pastas, criar os arquivos de configurações necessárias e publicar na ferramenta de cloud Heroku.
+  
+*Planejando o deploy*
+![Análise de resíduos](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/deploy.png)
+
 
 ***Passo 11 - Bot do Telegram:***
 
