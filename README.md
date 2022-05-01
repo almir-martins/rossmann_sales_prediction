@@ -170,7 +170,7 @@ Após execução bem sucedida do modelo o objetivo é publica-lo em um ambiente 
 - Criar a estrutura das pastas, criar os arquivos de configurações necessárias e publicar na ferramenta de cloud Heroku.
   
 *Planejando o deploy*
-![Análise de resíduos](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/deploy.png)
+![Planejando o deploy](https://raw.githubusercontent.com/almir-martins/rossmann_sales_prediction/main/img/deploy.jpg)
 
 
 ***Passo 11 - Bot do Telegram:***
