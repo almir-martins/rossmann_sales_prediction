@@ -9,7 +9,7 @@ import pandas as pd
 class Rossmann(object):
     def __init__(self):
         # O caminho precisa ser absoluto pois trata-se de arquivos no servidor
-        self.home_path = "C:/Users/Baby/Documents/Python/repos/ds_em_producao/rossmann_sales_prediction/"
+        self.home_path = ""
         self.competition_distance_scaler = pickle.load(
             open(self.home_path + "parameter/competition_distance_scaler.pkl", "rb")
         )

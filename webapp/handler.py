@@ -1,3 +1,4 @@
+import os
 import pickle
 import pandas as pd
 from flask import Flask, request, Response
@@ -6,7 +7,7 @@ from rossmann.Rossmann import Rossmann
 # Carregando o modelo salvo anteriormente
 model = pickle.load(
     open(
-        "C:/Users/Baby/Documents/Python/repos/ds_em_producao/rossmann_sales_prediction/model/model_rossmann.pkl",
+        "model/model_rossmann.pkl",
         "rb",
     )
 )
@@ -16,7 +17,7 @@ app = Flask(__name__)
 
 # Route é a URL a ser chamada no navegador
 @app.route("/rossmann/predict", methods=["POST"])
-def rossmann_predict(): # método
+def rossmann_predict():  # método
     # Pega o json que veio na requisição
     test_json = request.get_json()
 
@@ -51,4 +52,5 @@ def rossmann_predict(): # método
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1")
+    port = os.environ.get("PORT", 5000)
+    app.run(host="0.0.0.0", port=port)
