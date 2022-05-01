@@ -162,9 +162,12 @@ O objetivo dessa etapa foi de fato demonstrar o resultado do projeto, verificar 
 
 ***Passo 10 - Deploy do modelo em produção:***
 
-*Em desenvolvimento*
+Após execução bem sucedida do modelo o objetivo é publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A escolha foi criar uma API usando a plataforma de nuvem Heroku e os passos foram:
 
-Após execução bem sucedida do modelo o objetivo é publica-lo em um ambiente de nuvem para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios. A plataforma de aplicativo em nuvem escolhida foi o Heroku.
+- Salvar o modelo já treinado e com todos os ajustes finos de hiper parâmetros para não ter de realizar no ambiente de produção;
+- Cria uma classe com os métodos de limpeza, transformação, encoding e predição para encapsular o funcionamento do aplicativo;
+- Cria uma aplicação em Flask para ser o controler da arquitetura que vai receber as requisições, encaminhar para o modelo processar e devolver o resultado via response;
+- Criar a estrutura das pastas, criar os arquivos de configurações necessárias e publicar na ferramenta de cloud Heroku.
 
 ***Passo 11 - Bot do Telegram:***
 
